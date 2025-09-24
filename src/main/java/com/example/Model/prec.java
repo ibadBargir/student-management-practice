@@ -15,7 +15,7 @@ public class prec {
         *    *
         ******
         */
-        int m=4;
+  /*      int m=4;
         int n=6;
 
         for (int i =1; i<=m; i++){
@@ -24,16 +24,25 @@ public class prec {
                 System.out.print("*");
             }
             System.out.println("");
-        }
+        }*/
+    /*
+        *****
+        *   *
+        *   *
+        *****
 
-        int  e=6;
-        int y=4;
+    */    int  e=4;
+        int y=5;
 
         for (int i =1; i<=e; i++){
             for (int j=1; j<=y;j++){
-                System.out.println(" ");
+               if (i == 1 || j == 1 || i == e || j ==y){
+                   System.out.print("*");
+               }else {
+                   System.out.print(" ");
+               }
             }
-            System.out.println("*");
+            System.out.println();
         }
     }
 }
