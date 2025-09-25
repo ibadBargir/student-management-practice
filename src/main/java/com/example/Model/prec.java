@@ -1,5 +1,8 @@
 package com.example.Model;
 
+import java.util.Set;
+import java.util.TreeSet;
+
 public class prec {
 
     public static void main(String[] args) {
@@ -31,7 +34,7 @@ public class prec {
         *   *
         *****
 
-    */    int  e=4;
+    */   /* int  e=4;
         int y=5;
 
         for (int i =1; i<=e; i++){
@@ -44,5 +47,14 @@ public class prec {
             }
             System.out.println();
         }
+*/
+
+        Set<String> name = new TreeSet<>();
+
+        for (int i=30; i>=0; i--){
+            name.add(String.valueOf(i));
+            System.out.println("A"+i);
+        }
+
     }
 }
