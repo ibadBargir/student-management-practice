@@ -87,8 +87,6 @@ public class prec {
         System.out.println("---------------------------------------------");
 
 
-
-
         int u =4;
 
         for (int i=1;i<=u; i++){
@@ -102,6 +100,8 @@ public class prec {
 
             System.out.println();
         }
+
+
         System.out.println("____________________________");
 
         int x=5;
@@ -122,5 +122,92 @@ public class prec {
             }
             System.out.println();
         }
+
+        System.out.println("__________________________________");
+/*
+
+        1
+        2 3
+        4 5 6
+        7 8 9 10
+        11 12 13 14 15
+
+*/
+
+        int o =5;
+        int number=1;
+
+        for (int i=1; i<=o; i++){
+            for (int j=1; j<=i; j++){
+                System.out.print(number+" ");
+                number++; //number = number + 1
+            }
+            System.out.println();
+        }
+
+        System.out.println("------------------------------------------------------");
+
+        int w =5;
+
+        for (int i =1; i<=w; i++){
+            for (int j=1; j<=i; j++){
+               int sum= i + j;
+                if (sum % 2==0 ){
+                    System.out.print("1 ");
+                }else {
+                    System.out.print("0 ");
+                }
+
+            }
+            System.out.println();
+        }
+
+        System.out.println("______________________________________");
+
+
+        int h =5;
+
+        for (int i =1; i<=h;i++){
+
+            for (int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+
+
+            int spaces = 2 *( h-i);
+
+            for (int j =1; j<=spaces; j++){
+                System.out.print(" ");
+            }
+
+            for (int j =1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        //lower half
+        for (int i =h; i>=1;i--){
+
+            for (int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+
+
+            int spaces = 2 *( h-i);
+
+            for (int j =1; j<=spaces; j++){
+                System.out.print(" ");
+            }
+
+            for (int j =1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+
+
     }
 }
